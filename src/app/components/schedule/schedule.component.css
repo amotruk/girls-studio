@@ -1,0 +1,36 @@
+
+.table {
+  font-family: "Playfair Display";
+  width: 100%;
+  margin-bottom: 20px;
+  border: 5px solid hsl(317 100% 54%);
+  border-top: 5px solid hsl(317 100% 54%);
+  border-bottom: 3px solid hsl(317 100% 54%);
+  border-collapse: collapse;
+  outline: 3px solid hsl(317 100% 54%);
+  font-size: 15px;
+  box-shadow: 0 0 1.5em #CED4DA;
+  color: #edf1f3;
+  border-radius: 5px;
+}
+.table th {
+  font-weight: bold;
+  padding: 7px 35px;
+  background: hsl(317 100% 54%);
+  border: none;
+  text-align: left;
+  font-size: 18px;
+  border-top: 3px solid hsl(317 100% 54%);
+  border-bottom: 3px solid hsl(317 100% 54%);
+
+}
+.table td {
+  padding: 7px 35px;
+  border: none;
+  border-top: 3px solid hsl(317 100% 54%);
+  border-bottom: 3px solid hsl(317 100% 54%);
+  font-size: 15px;
+}
+.table tbody tr:nth-child(even){
+
+}

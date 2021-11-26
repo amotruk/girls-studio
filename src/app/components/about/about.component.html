@@ -1,61 +1,104 @@
-<section class="page-section" id="about">
+<section class="page-section mt-0" id="about">
   <div class="container">
     <div class="text-center">
-      <h2 class="section-heading text-uppercase">About</h2>
-      <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+      <h2 class="section-heading">О poldance студии GIRLS</h2>
     </div>
-    <ul class="timeline">
-      <li>
-        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/1.jpg" alt="..." /></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>2009-2011</h4>
-            <h4 class="subheading">Our Humble Beginnings</h4>
+    <div class="row align-items-center">
+      <h2 class="col__advantages">
+        <i class="fas fa-check"></i>
+        Самая атмосферная студия полденс в Киеве. Современный ремонт и стильный дизайн
+      </h2>
+      <h2 class="col__advantages">
+        <i class="fas fa-check"></i>
+        Профессиональный тренерский состав. Индивудуальный подход к каждому ученику
+      </h2>
+      <h2 class="col__advantages">
+        <i class="fas fa-check"></i>
+        Небольшие группы учеников на тренировках.
+      </h2>
+    </div>
+
+    <div class="row align-items-center our-directiond">
+      <div class="text-center">
+        <h2 class="section-heading">Направления тренировок</h2>
+      </div>
+
+      <div class="accordion accordion-flush" id="gallery">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed our-direction__title" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Pole dance
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+               data-bs-parent="#gallery">
+            <div class="accordion-body">
+              <h3 class="accordion-body__title">Танцевально-спортивное направление, которое объединяет в себе элементы
+                акробатики,
+                спортивной гимнастики и хореографию. Регулярные занятия помогают развиваеть силу и выносливость,
+                улучшить физическую форму и обрести уверенность в себе.
+              </h3>
+              <div class="col-6 about__video">
+                <app-video-modal [videoSrc]="'https://www.youtube.com/embed/TBNxS1BFCGo'"></app-video-modal>
+              </div>
+            </div>
           </div>
-          <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
         </div>
-      </li>
-      <li class="timeline-inverted">
-        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/2.jpg" alt="..." /></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>March 2011</h4>
-            <h4 class="subheading">An Agency is Born</h4>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed our-direction__title" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Stretching
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+               data-bs-parent="#gallery">
+            <h3 class="accordion-body__title"> Занятия по растяжке направлены на развитие гибкости тела.  Растяжка помогает сделать связки и суставы более эластичными, позволяя человеку выполнять движения по полной амплитуде.
+              А так же, стретчинг стимулирует кровообращение, расслабляет забитые мышцы и положительно влияет на психоэмоциональное состояние.
+            </h3>
+            <div class="col-6 about__video">
+              <app-video-modal [videoSrc]="'https://www.youtube.com/embed/j1bmuFwRvJo'"></app-video-modal>
+            </div>
           </div>
-          <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
         </div>
-      </li>
-      <li>
-        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/3.jpg" alt="..." /></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>December 2015</h4>
-            <h4 class="subheading">Transition to Full Service</h4>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed our-direction__title" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Exotic
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+               data-bs-parent="#gallery">
+            <h3 class="accordion-body__title">Красивые и чувственные танцевальные связки, идеальный микс сексуальности и
+              спорта. Экзотик исполняют как в специальной
+              танцевальной обуви, так и босиком. В студии Girls есть занятия по экзотику для разных уровней подготовки,
+              но для тех кто совсем не знаком с пилоном, рекомендуется сначала посетить несколько занятий
+              полденс для понимания основ взаимодейсвия с пилоном.
+            </h3>
+            <div class="col-6 about__video">
+              <app-video-modal [videoSrc]="'https://www.youtube.com/embed/twbtNzc27Pg'"></app-video-modal>
+            </div>
           </div>
-          <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
         </div>
-      </li>
-      <li class="timeline-inverted">
-        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/4.jpg" alt="..." /></div>
-        <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4>July 2020</h4>
-            <h4 class="subheading">Phase Two Expansion</h4>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingFour">
+            <button class="accordion-button collapsed our-direction__title" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseThree">
+              Pole kids
+            </button>
+          </h2>
+          <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+               data-bs-parent="#gallery">
+            <h3 class="accordion-body__title"> Приглашаем детей от 8 до 13 лет на акробатику на пилоне для детей. Тренировки Pole Dance отлично помогают развивать детям
+            силу, гибкость и координацию. </h3>
+            <div class="col-6 about__video">
+              <app-video-modal [videoSrc]="'https://www.youtube.com/embed/Z389Leqci8'"></app-video-modal>
+            </div>
           </div>
-          <div class="timeline-body"><p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p></div>
         </div>
-      </li>
-      <li class="timeline-inverted">
-        <div class="timeline-image">
-          <h4>
-            Be Part
-            <br />
-            Of Our
-            <br />
-            Story!
-          </h4>
-        </div>
-      </li>
-    </ul>
+      </div>
+    </div>
   </div>
 </section>

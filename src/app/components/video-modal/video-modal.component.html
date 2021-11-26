@@ -1,0 +1,16 @@
+<a class="youtube-img-container" (click)="openModal(template)">
+  <img class="w-100"
+       [src]="imgSrc | safe" />
+    <i class="fab fa-youtube youtube-logo"></i>
+</a>
+
+<ng-template #template>
+  <div class="ratio ratio-16x9">
+    <iframe
+      [src]="videoSrc + '?autoplay=1' | safe"
+      title="YouTube video"
+      allow="autoplay"
+      allowfullscreen
+    ></iframe>
+  </div>
+</ng-template>

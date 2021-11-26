@@ -1,0 +1,10 @@
+<section class="page-section m-20" id="contact">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Как к нам добраться?</h2>
+    </div>
+    <google-map [width]="null" [height]="null" [options]="mapOptions">
+      <map-marker [title]="marker.title" [position]="marker.position" [options]="markerOptions"></map-marker>
+    </google-map>
+  </div>
+</section>

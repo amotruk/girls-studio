@@ -1,0 +1,16 @@
+.youtube-img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.youtube-logo {
+  font-size: 4em;
+  position: absolute;
+  color: red;
+}
+
+.youtube-logo:hover {
+  color: darkred;
+}

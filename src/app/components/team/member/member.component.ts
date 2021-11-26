@@ -8,6 +8,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class MemberComponent implements OnInit {
   @Input() name: string = "";
+  @Input() photo: string = "";
   @Input() facebook: string = "";
   @Input() instagram: string = "";
   @Input() telegram: string = "";

@@ -1,13 +1,29 @@
 body {
-  background: whitesmoke;
+  background-color: #212529;
+  /*font-family: 'Playfair Display', serif;*/
+  font-family: 'Sintony', sans-serif;
+  text-shadow: 0 0 1em #CED4DA;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3 {
+  margin: 0;
+  padding: 0;
 }
 
 .bg-pink {
-  background: #F35183;
+  background: hsl(317 100% 54%);
 }
 
 .color-pink {
-  color: #F35183;
+  color: hsl(317 100% 54%);
+  text-shadow: none;
 }
 
 .img-link {
@@ -16,8 +32,91 @@ body {
 }
 
 .page-section {
-  margin-top: 2rem !important
+  margin-top: 2rem
 }
+
 .nav-link {
   font-size: 2rem;
 }
+
+.animate__animated.animate__infinite_hover:hover {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.accordion-button:not(.collapsed) {
+  color: hsl(317 100% 54%);
+  box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button {
+  position: relative;
+
+}
+
+.accordion-button:after {
+  content: "";
+  background-image: url("assets/img/angle-down-solid.svg");
+  position: absolute;
+  height: 30px;
+  left: 90%;
+  border: none;
+  -webkit-filter: drop-shadow(1px 1px 5px #CED4DA);
+  filter: drop-shadow(1px 1px 5px #CED4DA);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("assets/img/angle-down-solid.svg");
+}
+
+.my__style {
+  font-size: 24px;
+  text-transform: uppercase;
+  background-color: #212529;
+  color: #CED4DA;
+  text-shadow: 0 0 1em #edf1f3;
+}
+
+.my__style-not-collapse:not(.collapsed) {
+  background-color: hsl(317 100% 54%);
+  box-shadow: 0px 5px 30px #ced4da;
+  color: #212529;
+}
+
+.map-container {
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+}
+
+a[href^="http://maps.google.com/maps"] {
+  display: none !important
+}
+
+a[href^="https://maps.google.com/maps"] {
+  display: none !important
+}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+  display: none;
+}
+
+.gmnoprint div {
+  background: none !important;
+}
+
+.section-heading {
+  margin-bottom: 2em;
+  margin-top: 2em;
+  text-transform: uppercase;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.25rem #edf1f3;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+

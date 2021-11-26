@@ -1,0 +1,45 @@
+<section class="page-section" id="schedule">
+  <div class="container">
+    <div class="text-center">
+      <h2 class="section-heading">Расписание</h2>
+    </div>
+    <table class="table text-break d-none d-lg-table">
+      <thead>
+      <tr class="time__style">
+        <th>{{timeTitle}}</th>
+        <th *ngFor="let title of getHeader()">{{title}}</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let time of getTime()">
+        <td class="time__style">{{time}}</td>
+        <td class="line__slyle" style="white-space: pre-line" *ngFor="let name of getTrainings(time)">{{name}}</td>
+      </tr>
+      </tbody>
+    </table>
+
+
+    <div class="d-lg-none">
+      <div class="accordion accordion-flush" id="accordionFlush">
+        <div class="accordion-item"  *ngFor="let title of getHeader(); let index = index">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button [ngClass]="{collapsed: !isToday(title)}" class="accordion-button my__style my__style-not-collapse" type="button" data-bs-toggle="collapse"
+                    [attr.data-bs-target]="'#scheduleAccordion' + index" aria-expanded="false" aria-controls="flush-collapseOne">
+              {{title}}
+            </button>
+          </h2>
+          <div [ngClass]="{show: isToday(title)}" [attr.id]="'scheduleAccordion' + index" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+               data-bs-parent="#accordionFlush">
+            <div class="accordion-body my__style">
+              <ul class="list-group">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item my__style" *ngFor="let name of getTrainingsForDay(title)">{{name}}</li>
+                </ul>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

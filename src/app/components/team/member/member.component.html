@@ -1,8 +1,8 @@
 <div class="align-content-center">
-  <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="..."/>
+  <img class="mx-auto rounded-circle" [src]="photo" alt="..."/>
   <h4>{{name}}</h4>
-  <a class="img-link me-2" target="_blank" href="test"><i class="fab fa-2x fa-facebook-f fa-cog color-pink"></i></a>
-  <a class="img-link me-2" target="_blank" href="test"><i class="fab fa-2x fa-instagram fa-cog color-pink"></i></a>
-  <a class="img-link me-2" target="_blank" href="test"><i class="fab fa-2x fa-telegram fa-cog color-pink"></i></a>
+  <a *ngIf="facebook" class="img-link me-2" target="_blank" [attr.href]="facebook"><i class="fab fa-2x fa-facebook-f fa-cog color-pink"></i></a>
+  <a *ngIf="instagram" class="img-link me-2" target="_blank" [attr.href]="instagram"><i class="fab fa-2x fa-instagram fa-cog color-pink"></i></a>
+  <a *ngIf="telegram" class="img-link me-2" target="_blank" [attr.href]="telegram"><i class="fab fa-2x fa-telegram fa-cog color-pink"></i></a>
 </div>
 
